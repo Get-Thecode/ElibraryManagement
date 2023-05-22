@@ -11,7 +11,7 @@ namespace WebApplication1
 {
 
 
-    public partial class WebForm7
+    public partial class adminauthormanagement
     {
 
         /// <summary>

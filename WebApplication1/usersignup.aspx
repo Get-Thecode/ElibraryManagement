@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="usersignup.aspx.cs" Inherits="WebApplication1.WebForm5" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="usersignup.aspx.cs" Inherits="WebApplication1.usersignup" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -17,9 +17,7 @@
                   <div class="row">
                      <div class="col">
                         <center>
-                           <h4>Memeber Signup</h4>
-                          
-                           <asp:Label class="badge badge-pill badge-info" ID="Label1" runat="server" Text="Your status"></asp:Label>
+                           <h4>Member Sign Up</h4>
                         </center>
                      </div>
                   </div>
@@ -119,33 +117,29 @@
                   <div class="row">
                      <div class="col">
                         <center>
-                            
                            <span class="badge badge-pill badge-info">Login Credentials</span>
                         </center>
                      </div>
                   </div>
                   <div class="row">
                      <div class="col-md-6">
-                        <label>User ID</label>
+                        <label>Member ID</label>
                         <div class="form-group">
-                           <asp:TextBox class="form-control" ID="TextBox8" runat="server" placeholder="User ID" ReadOnly="True"></asp:TextBox>
+                           <asp:TextBox class="form-control" ID="TextBox8" runat="server" placeholder="User ID"></asp:TextBox>
                         </div>
                      </div>
                      <div class="col-md-6">
-                        <label> Password</label>
+                        <label>Password</label>
                         <div class="form-group">
-                           <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="Email ID" TextMode="Password" ReadOnly="True"></asp:TextBox>
+                           <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="Email ID" TextMode="Password"></asp:TextBox>
                         </div>
                      </div>
-                     
                   </div>
                   <div class="row">
                      <div class="col">
-                        
-                           <div class="form-group">
-                              <asp:Button class="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Text="Sign up" OnClick="Button1_Click" />
-                           </div>
-                        
+                        <div class="form-group">
+                           <asp:Button class="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Text="Update" />
+                        </div>
                      </div>
                   </div>
                </div>
